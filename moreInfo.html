@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adding title  -->
+    <title>SuperHero MoreInfo</title>
+    
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Adding Custom stylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <link type="text/css" rel="stylesheet" href="css/fav.css">
+    <link type="text/css" rel="stylesheet" href="css/moreInfo.css">
+</head>
+
+<body>
+    <!-- Adding navbar  -->
+    <header class="navbar">
+        <div class="logo">
+            <bolder style="font-size: 5rem;">S</bolder>uperheroHunter
+        </div>
+        <ul class="links">
+            <li><a href="/"><i class="fa-solid fa-home"></i> Home</a></li>
+            <li><a href="./favourites.html"><i class="fa-solid fa-heart fav-icon"></i> Favourite</a></li>
+        </ul>
+
+         <!-- Adding toggle btn for navbar  -->
+        <div class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dropdown-menu">
+            <li><a href="/"><i class="fa-solid fa-home"></i> Home</a></li>
+            <li><a href="./favourites.html"><i class="fa-solid fa-heart fav-icon"></i> Favourite</a></li>
+        </div>
+    </header>
+    <!-- Ending navbar  -->
+
+    <!-- Adding div card to show informaton of characters  -->
+    <div class="flex-row info">
+        <section class="flex-col" id="info-container">
+            <!-- Adding other information of characters through runtime or dom -->
+        </section>
+    </div>
+
+    <!-- ending div card to show informaton of characters  -->
+
+    <!-- Adding notification card after adding super heros to fav list  -->
+    <span data-visiblity="hide" class="fav-toast">Added to Favourites</span>
+
+    <!-- Adding notification card after removing super heros to fav list  -->
+    <span data-visiblity="hide" class="remove-toast">Removed from Favourites</span>
+
+
+    <!-- Adding custom scripts file  -->
+    <script src="./js/moreinfo.js"></script>
+    <script src="./js/common.js"></script>
+
+    <!-- endinging custom scripts file  -->
+
+
+</body>
+
+</html>

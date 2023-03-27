@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Adding title  -->
+    <title>Favourites SuperHero</title>
+
+    <!-- Adding custome stylesheet  -->
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <link type="text/css" rel="stylesheet" href="css/fav.css">
+    <!-- ending custome stylesheet  -->
+
+
+</head>
+
+<body>
+
+    <!-- Adding navbar  -->
+    <header class="navbar">
+
+        <div class="logo">
+            <bolder style="font-size: 5rem;">S</bolder>uperheroHunter
+        </div>
+        <ul class="links">
+            <li><a href="/"><i class="fa-solid fa-home"></i> Home</a></li>
+
+        </ul>
+        <div class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dropdown-menu">
+            <li><a href="/"><i class="fa-solid fa-home"></i> Home</a></li>
+
+        </div>
+
+    </header>
+    <!-- ending navbar  -->
+
+
+    <!-- Adding div to show favourites hero   -->
+    <div class="favourite-characters">
+        <div class="flex-row cards-container" id="container">
+
+        </div>
+    </div>
+    <!-- ending div to show favourites hero   -->
+
+    <!-- Adding notification card after removing super heros to fav list  -->
+    <span data-visiblity="hide" class="remove-toast">Successfully removed from Favourites</span>
+
+    <!-- Adding custom scripts file  -->
+    <script src="./js/fav.js"></script>
+    <script src="./js/common.js"></script>
+    <!-- ending custom scripts file  -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+/* start of styling for moreinfo  hero */
+
+
+/* adding style for body */
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* end adding style for body */
+
+/* adding style for main div  */
+.info {
+    justify-content: center;
+    align-items: center;
+    height: 88%;
+}
+
+/* adding style for main div -> inner div to dhow information of hero  */
+#info-container {
+
+    width: 60%;
+    height: auto;
+    gap: 15px;
+    padding: 0px 30px;
+    margin-top: 80px;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+
+    box-shadow: inset 5px 5px 5px rgba(155, 75, 75, 0.2),
+        inset -5px -5px 15px rgba(59, 148, 62, 0.1),
+        inset 5px 5px 5px rgba(158, 38, 38, 0.3),
+        inset -5px -5px 15px rgba(51, 121, 83, 0.2);
+    color: white
+}
+
+/* adding style for hero name  */
+.hero-name {
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(33, 8, 198);
+}
+
+/* adding style for hero information */
+.hero-img-and-more-info {
+    gap: 30px;
+}
+
+/* adding style for hero img */
+.hero-img {
+    width: 20%;
+    height: auto;
+    min-width: 120px;
+}
+
+/* adding style for hero information */
+.more-info {
+    gap: 15px;
+    font-size: 1.3rem;
+}
+
+.id,
+.comics,
+.series,
+.stories {
+    gap: 5px;
+}
+
+.hero-discription {
+    font-size: 1.1rem;
+}
+
+.hero-discription b {
+    font-size: 1.3rem;
+}
+
+/* end adding style for hero information */
+
+
+/* Media Queries for different screen sizes  */
+@media screen and (max-width: 678px) {
+    .hero-img-and-more-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-discription {
+        text-align: center;
+    }
+
+    #info-container {
+        width: 85%;
+    }
+
+    #landscapeImage {
+        width: 100%
+    }
+
+    .info {
+        height: 100vh;
+    }
+
+    .more-info {
+        gap: 0px;
+    }
+}

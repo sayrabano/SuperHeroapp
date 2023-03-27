@@ -1,0 +1,158 @@
+
+/* start of styling for fav hero */
+
+
+/* adding style for body */
+body{
+    overflow-x: hidden;
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    
+}
+/* ending style for body */
+
+/* adding style for main container for showing favourites hero */
+.cards-container{
+    justify-content: space-evenly;
+    
+    flex-wrap: wrap;
+    overflow: hidden;
+   
+}
+
+/* adding style for inner container for showing favourites hero */
+.card{
+   
+    height: 484px;
+    width: 250px;
+    margin: 40px 25px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 10px;
+    z-index: 2;
+    font-size: 1rem;
+    font-weight: bolder;
+    backdrop-filter: blur(2px);
+    
+    box-shadow: inset 5px 5px 5px rgba(155, 75, 75, 0.2),
+    inset -5px -5px 15px rgba(59, 148, 62, 0.1),
+    inset 5px 5px 5px rgba(158, 38, 38, 0.3),
+    inset -5px -5px 15px rgba(51, 121, 83, 0.2);
+    color: rgb(246, 242, 244);
+}
+
+/* adding style for img for showing favourites hero img */
+.card img{
+    border-radius: 10px 10px 0 0;
+}
+
+/* adding style for name for showing favourites hero name */
+.name{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: rgb(36, 5, 186)
+}
+
+/* adding style for remove button*/
+.remove-btn{
+    border-radius: 0 0 10px 10px;
+}
+
+
+/* adding style for when no fav hero available  */
+.no-characters {
+    margin-top: 10%;
+    font-size: 5rem;
+  text-align: center;
+  
+  background: linear-gradient(to right, #928989 20%, rgb(37, 196, 32) 40%, rgb(56, 35, 192) 60%, #cab411 80%);
+  background-size: 200% auto;
+  
+  
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  
+}
+
+/* adding style for buttons */
+ .btn  {
+    
+    font-size: 1rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #928989 20%, rgb(37, 196, 32) 40%, rgb(56, 35, 192) 60%, #cab411 80%);
+
+    color: #080808;
+     border: none;
+   
+     border-radius: 8px;
+    
+     
+}
+
+/* adding style for buttons for hovering  */
+.btn:hover{
+    cursor: pointer;
+    color: red;
+    font-size: 1.2rem;
+}
+/* adding style for buttons icons  */
+.btn i {
+    
+   color: #0b0c0b;
+     justify-content: center;
+     display: flex;   
+     
+}
+
+/* adding style for buttons icons for hovering  */
+.btn :hover {
+    font-size: 1.2rem;
+   cursor: pointer;
+   color: #6f2323;
+   
+
+     
+}
+
+.character-info a i{ 
+    width: 10%;
+    
+}
+
+/* adding style to show favourites result according to screen  */
+@media screen and (max-width: 678px) {
+    .hero-img-and-more-info{
+         flex-direction: column;
+         align-items: center;
+    }
+    .hero-discription{
+         text-align: center;
+    }
+    #info-container{
+         width: 85%;
+    }
+    #landscapeImage{
+         width:100%
+    }
+    .info{
+         height: 100vh;
+    }
+    .more-info{
+         gap: 0px;
+    }
+}
+
+
+
+/* ending of styling for fav hero */

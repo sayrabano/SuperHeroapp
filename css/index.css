@@ -1,0 +1,477 @@
+/* start for styling to home page */
+
+
+/* adding url for goggle fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Varela+Round&family=Zeyada&display=swap');
+
+/* adding style for body */
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: poppins;
+
+}
+
+body {
+     height: 100vh;
+
+     background-size: cover;
+     background-position: center;
+     /* adding background image  */
+     background-image: url("/assets/images/bg.jpg");
+     z-index: 2;
+     backdrop-filter: blur(3px);
+
+}
+
+/* ending style for body */
+
+/* ---------------adding style for navbar------------------- */
+
+header {
+     position: relative;
+     padding: 0 2rem;
+}
+
+.navbar {
+     width: 100%;
+     height: 60px;
+     max-width: 1200px;
+     margin: 0 auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+/* style for navbar log */
+.navbar .logo {
+     font-size: 2rem;
+     font-weight: bolder;
+     background: linear-gradient(to right, #ce1d1d 20%, rgb(37, 196, 32) 40%, rgb(56, 35, 192) 60%, #cab411 80%);
+     background-size: 200% auto;
+
+     color: #000;
+     background-clip: text;
+
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+
+}
+
+/* style for navbar links div */
+.navbar .links {
+     display: flex;
+     gap: 2rem;
+
+
+}
+
+/* style for navbar toggling */
+.navbar .toggle-btn {
+     color: #fff;
+     font-size: 1.5rem;
+     cursor: pointer;
+     display: none;
+
+}
+
+/* adding style for navbar li  */
+li {
+     list-style: none;
+}
+
+/* adding style for navbar li a  */
+a {
+     text-decoration: none;
+
+     font-size: 1.5rem;
+     font-weight: bold;
+     background: linear-gradient(to right, #ce1d1d 20%, rgb(37, 196, 32) 40%, rgb(56, 35, 192) 60%, #cab411 80%);
+     background-size: 200% auto;
+
+
+     background-clip: text;
+
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+/* adding style for navbar a for hovering  */
+a:hover {
+     color: #fff;
+     cursor: pointer;
+     transition: .2s ease-in-out;
+     background: linear-gradient(to right, #6d62b4 20%, rgb(243, 96, 5) 40%, rgb(16, 212, 65) 60%, #890566 80%);
+     background-size: 200% auto;
+
+     color: #000;
+     background-clip: text;
+
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+
+}
+
+/* dropdown menu */
+.dropdown-menu {
+     display: none;
+     position: absolute;
+     right: 1rem;
+     top: 50px;
+     width: 200px;
+     height: 0;
+     background-color: rgba(255, 255, 255, 0.1);
+     backdrop-filter: blur(15px);
+     border-radius: 15px;
+     overflow: hidden;
+     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+     height: 80px;
+}
+
+.dropdown-menu li {
+     padding: 0.5rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+/* //adding style to make navbar responsive responsive */
+
+@media(max-width:792px) {
+     .navbar .links {
+          display: none;
+     }
+
+     .navbar .toggle-btn {
+          display: block;
+     }
+
+     .dropdown-menu {
+          display: block;
+     }
+
+
+
+}
+
+@media(max-width:576px) {
+
+     .dropdown-menu {
+          top: 1rem;
+          left: 15rem;
+          width: unset;
+     }
+
+
+}
+
+/* style for search box div */
+.search-box {
+     position: relative;
+     height: 60px;
+     width: 60px;
+     margin-left: 45%;
+     margin-top: 100px;
+     border-radius: 50%;
+     box-shadow: 5px 5px 30px rgba(0, 0, 0, .2);
+     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* style for search box div to make active */
+.search-box.active {
+     width: 350px;
+     margin-left: 35%;
+
+}
+
+/* style for search box input */
+.search-box input {
+     width: 100%;
+     height: 100%;
+     border: none;
+     border-radius: 50px;
+     background: #262627;
+     outline: none;
+     padding: 0 60px 0 20px;
+     font-size: 18px;
+     opacity: 0;
+     z-index: -.2;
+     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* style for search box input active */
+.search-box input.active {
+     opacity: 1;
+
+     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+          inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+          inset 5px 5px 5px rgba(0, 0, 0, 0.3),
+          inset -5px -5px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* style for search box input place holder */
+.search-box input::placeholder {
+     color: #a6a6a6;
+}
+
+/* style for searchicons */
+.search-box .search-icon {
+     position: absolute;
+     right: 0px;
+     top: 50%;
+     transform: translateY(-50%);
+     height: 60px;
+     width: 60px;
+     background: #302f2f;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 60px;
+     font-size: 22px;
+     color: #664AFF;
+     cursor: pointer;
+     z-index: 1;
+     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* style for search icons to make active */
+.search-box .search-icon.active {
+     right: 5px;
+     height: 50px;
+     line-height: 50px;
+     width: 50px;
+     font-size: 20px;
+     background: transparent;
+     color: #fff;
+     transform: translateY(-50%) rotate(360deg);
+     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+          inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+          inset 5px 5px 5px rgba(0, 0, 0, 0.3),
+          inset -5px -5px 15px rgba(255, 255, 255, 0.2);
+
+}
+
+/* style for cancel icon */
+.search-box .cancel-icon {
+     position: absolute;
+     right: 20px;
+     top: 50%;
+     transform: translateY(-50%);
+     font-size: 25px;
+     color: #fff;
+     cursor: pointer;
+     transition: all 0.5s 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* style for cancel icons to make active */
+.search-box .cancel-icon.active {
+     right: -40px;
+     transform: translateY(-50%) rotate(360deg);
+}
+
+/* style for search result data */
+
+
+#search-results {
+     min-width: 435px;
+
+     margin-top: 30px;
+     list-style: none;
+     z-index: 2;
+     backdrop-filter: blur(4px);
+
+}
+
+#search-results li {
+     margin-top: 4px;
+     background: rgba(104, 52, 209, 0.6);
+     height: 80px;
+     color: white;
+     width: 110%;
+}
+
+.single-search-result {
+     padding: 10 5px;
+     justify-content: space-between;
+     align-items: center;
+     gap: 10px;
+     border: 1px solid black;
+     width: inherit;
+}
+
+
+/* style for hero information */
+.hero-info {
+     display: flex;
+     align-items: center;
+}
+
+/* style for hero name */
+.hero-name {
+
+     font-size: 20px;
+}
+
+/* style for  buttons */
+.buttons {
+     gap: 5px;
+     padding: 0 10px;
+}
+
+
+.flex-row {
+     display: flex;
+     flex-direction: row;
+}
+
+.flex-col {
+     display: flex;
+     flex-direction: column;
+}
+
+.buttons .btn {
+
+
+     font-weight: bold;
+
+     color: #de480d;
+     border: none;
+     background-color: #a6a6a6;
+     border-radius: 3px;
+
+}
+
+.buttons .btn i {
+
+     color: #20B130;
+     justify-content: center;
+     display: flex;
+
+
+
+
+}
+
+.buttons :hover {
+     font-size: 1.2rem;
+     cursor: pointer;
+     color: #000;
+     background: linear-gradient(to right, #a24949 20%, rgb(237, 242, 237) 40%, rgb(56, 35, 192) 60%, #cab411 80%);
+
+
+}
+
+.buttons .btn :hover {
+
+     cursor: pointer;
+     color: rgb(159, 43, 43);
+
+}
+
+
+/* end style for buttons */
+
+/* style for hero image */
+
+.img-info {
+     gap: 10px;
+}
+
+.img-info img {
+     width: 50px;
+}
+
+/* end style for hero image */
+
+
+/* style for notification after adding and removing from favourites */
+.fav-toast,
+.remove-toast {
+     position: absolute;
+     top: 50px;
+     right: 30px;
+
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+     border-radius: 12px;
+     padding: 10px 30px 10px 25px;
+     margin: 0 20px;
+     font-size: 1.2rem;
+     font-weight: bold;
+     background: linear-gradient(to right, #9e6767 20%, rgb(108, 168, 106) 40%, rgb(102, 94, 158) 60%, #cab411 80%);
+
+
+
+}
+
+.fav-toast[data-visiblity="show"],
+.remove-toast[data-visiblity="show"] {
+     display: block;
+}
+
+.fav-toast[data-visiblity="hide"],
+.remove-toast[data-visiblity="hide"] {
+     display: none;
+}
+
+.fav-toast {
+
+     display: flex;
+     flex-direction: column;
+     transform: translateX(calc(100% +3 0px));
+     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+     box-shadow: inset 5px 5px 5px rgba(147, 41, 41, 0.2),
+          inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+          inset 5px 5px 5px rgba(145, 14, 14, 0.3),
+          inset -5px -5px 15px rgba(255, 255, 255, 0.2);
+
+}
+
+.remove-toast {
+     display: flex;
+     flex-direction: column;
+     transform: translateX(calc(100% +3 0px));
+     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+          inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+          inset 5px 5px 5px rgba(188, 24, 24, 0.3),
+          inset -5px -5px 15px rgba(255, 255, 255, 0.2);
+
+
+}
+/* end style for notification after adding and removing from favourites */
+
+
+/* Media Queries for different screen sizes  */
+
+@media screen and (max-width: 576px) {
+
+     #search-bar {
+          min-width: 435px;
+     }
+
+     .navbar {
+          flex-direction: column;
+          gap: 10px;
+          padding: 10px 0;
+          /* height: 30%; */
+     }
+
+     .navbar-brand {
+          display: flex;
+          flex-direction: column;
+
+     }
+
+     .navbar-brand span {
+          margin-top: -35px;
+     }
+
+     .logo {
+          width: 25%;
+          min-width: 45px;
+     }
+}

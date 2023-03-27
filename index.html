@@ -1,0 +1,81 @@
+  <!-- Start for home page  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Adding title  -->
+    <title>Super Hero Hunter App</title>
+    <!-- Adding title  -->
+    <!-- custome stylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+
+
+</head>
+
+<body>
+     <!-- Adding navbar  -->
+    <header class="navbar">
+        <div class="logo">
+            <bolder style="font-size: 5rem;">S</bolder>uperheroHunter
+        </div>
+        <ul class="links">
+            <li><a href="/"><i class="fa-solid fa-home"></i> Home</a></li>
+            <li><a href="./favourites.html"><i class="fa-solid fa-heart fav-icon"></i> Favourite</a></li>
+        </ul>
+         <!-- Adding toggle btn for navbar  -->
+        <div class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dropdown-menu">
+            <li><a href="/"><i class="fa-solid fa-home"></i> Home</a></li>
+            <li><a href="./favourites.html"><i class="fa-solid fa-heart fav-icon"></i> Favourite</a></li>
+        </div>
+    </header>
+     <!-- Ending navbar  -->
+
+      <!-- Adding search bar to search characters or hero  -->
+    <div class="search-box">
+         <!-- Adding search bar input  to search characters or hero  -->
+        <input id="search-bar" type="text" placeholder="Search your superhero here...">
+
+         <!-- Adding search icon to search characters or hero  -->
+        <div class="search-icon">
+            <i class="fas fa-search"></i>
+        </div>
+
+         <!-- Adding cancel iconeto close search bar  -->
+        <div class="cancel-icon">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+
+         <!-- Adding search results itno list   -->
+        <ul id="search-results">
+
+        </ul>
+         <!-- ending search results itno list   -->
+
+    </div>
+
+    <!-- Adding notification card after adding super heros to fav list  -->
+    <span data-visiblity="hide" class="fav-toast">Added to Favourites</span>
+
+     <!-- Adding notification card after removing super heros to fav list  -->
+    <span data-visiblity="hide" class="remove-toast">Removed from Favourites</span>
+
+  <!-- Adding custom scripts file  -->
+    <script src="./js/app.js"></script>
+    <script src="./js/common.js"></script>
+
+      <!-- ending custom scripts file  -->
+</body>
+
+</html>
