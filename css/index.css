@@ -20,7 +20,7 @@ body {
      background-size: cover;
      background-position: center;
      /* adding background image  */
-     background-image: url("/assets/images/bg.jpg");
+     background-image: url("assets/images/bg.jpg");
      z-index: 2;
      backdrop-filter: blur(3px);
 
